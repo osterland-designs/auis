@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>AUIS Innsbruck</title>
+	<link rel="stylesheet" type="text/css" href="css/auisstyle.css">
+	<script type="text/javascript">
+  function iframeLoaded() {
+      var iFrameID = document.getElementById('idIframe');
+      if(iFrameID) {
+            
+            iFrameID.height = "";
+            iFrameID.height = iFrameID.contentWindow.document.body.scrollHeight + "px";
+      }   
+  }
+</script>
+</head>
+<body>
+	<header>
+		<div id=iframe>
+			<iframe src="https://www.youtube.com/embed/Mxjg3z6_wJ4" id="idIframe" onload="iframeLoaded()" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen scrolling="no"></iframe>
+		</div>
+		<div id="nav">
+			<nav>
+				<a href="index.html">Home</a>
+				<a href="highlights.html" >Highlights</a>
+				<a href="karte.html">Karte</a>
+				<a href="virtuelletour.html">Tour</a>
+				<a href="kontakt.html" class="active">Kontakt</a>
+				<a href="impressum.html" id="impressum">Impressum</a>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<div class="over">
+			<div class="left kontakt">
+			<h2>Kontakt</h2>
+			<p>Montag - Samstag&nbsp;geöffnet<br>
+			10 Uhr - 1 Uhr<br>
+			Sonntag Ruhetag</p>
+			<p>Warme Küche:<br>
+			10 Uhr - 14 Uhr - 17 Uhr - 22 Uhr<br>
+			Nachmittagskarte von 14 Uhr - 17 Uhr<br> mit Pizza - Pasta - Salate</p>
+			<p>Auis<br>
+			Museumsstraße 24<br>
+			6020 Innsbruck<br>
+			0512/ 58 36 71<br><a href="http://www.auis.at">www.auis.at</a><br><a href="mailto:mail@auis.at">mail@auis.at</a></p>
+			<p>&nbsp;</p>
+			</div>
+			<img src="imgs/mousse.jpg" alt="mousse" class="rightpic">
+		</div>
+	</main>
+	<footer>Auis restaurant * Museumsstrasse 24 * 6020 Innsbruck * T: +43/512/583671 * mail@auis.at * www.auis.at</footer>
+</body>
+</html>

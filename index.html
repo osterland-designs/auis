@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>AUIS Innsbruck</title>
+	<link rel="stylesheet" type="text/css" href="css/auisstyle.css">
+	<script type="text/javascript">
+  function iframeLoaded() {
+      var iFrameID = document.getElementById('idIframe');
+      if(iFrameID) {
+            
+            iFrameID.height = "";
+            iFrameID.height = iFrameID.contentWindow.document.body.scrollHeight + "px";
+      }   
+  }
+</script>
+</head>
+<body>
+	<header>
+		<div id=iframe>
+			<iframe src="https://www.youtube.com/embed/Mxjg3z6_wJ4" id="idIframe" onload="iframeLoaded()" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen scrolling="no"></iframe>
+		</div>
+		<div id="nav">
+			<nav>
+				<a href="index.html" class="active">Home</a>
+				<a href="highlights.html">Highlights</a>
+				<a href="karte.html">Karte</a>
+				<a href="virtuelletour.html">Tour</a>
+				<a href="kontakt.html">Kontakt</a>
+				<a href="impressum.html" id="impressum">Impressum</a>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<h1>Flo+Jo</h1>
+		<section>
+			<div id= "aboutus">
+				<h2>Flo + Jo</h2>
+				<p>„Ein breites Angebot an unterschiedlichen Speisen und monatlich wechselnde Köstlichkeiten aus der ganzen Welt – gemischt mit guten und regional erhältlichen Zutaten.“ ist der Leitsatz unserer Küche. Dabei wissen wir ganz genau, dass das Ganze nur so gut ist, wie die Summe seiner Teile. Mit Freude und Enthusiasmus stehen wir in UNSERER Küche selbst hinterm Herd, um euren Anforderungen gerecht zu werden und feinste Qualität zu liefern. Für Vegatarier und Fleischtiger. Für Naschkatzen und Genießer. Für Biertrinker und Weinliebhaber. Tag für Tag. Das ganze Jahr. Mittags und abends. Kurzum: Mahlzeit!</p>
+			</div>
+			<div id="picmain">
+			<img src="imgs/flo.jpg" alt="Flo" class="homepic">
+			<img src="imgs/FloHannes.jpg" alt="Flo und Hannes" class="homepic">
+			</div>
+		</section>
+		<section class="flex">
+			<div id="tripadvisor">
+				<a href="https://www.tripadvisor.de/Restaurant_Review-g190445-d4597919-Reviews-Aui_s_Restaurant_Bar-Innsbruck_Tirol_Austrian_Alps.html"><img alt="tripadvisor" src="imgs/tripadvisor-certificate-excellence-2016.jpg" id="trippic"></a>
+			</div>
+			<div id="newsletter">
+				<h3>Newsletter</h3>
+				<form>
+					<label>Emailadresse
+						<input type="email" name="email" placeholder="me@me.at"></label><br>
+					<input type="button" value="Abonnieren">
+				</form>
+			</div>
+		</section>
+	</main>
+	<footer>Auis restaurant * Museumsstrasse 24 * 6020 Innsbruck * T: +43/512/583671 * mail@auis.at * www.auis.at</footer>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>AUIS Innsbruck</title>
+	<link rel="stylesheet" type="text/css" href="css/auisstyle.css">
+	<script type="text/javascript">
+  function iframeLoaded() {
+      var iFrameID = document.getElementById('idIframe');
+      if(iFrameID) {
+            
+            iFrameID.height = "";
+            iFrameID.height = iFrameID.contentWindow.document.body.scrollHeight + "px";
+      }   
+  }
+</script>
+</head>
+<body>
+	<header>
+		<div id=iframe>
+			<iframe src="https://www.youtube.com/embed/Mxjg3z6_wJ4" id="idIframe" onload="iframeLoaded()" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen scrolling="no"></iframe>
+		</div>
+		<div id="nav">
+			<nav>
+				<a href="index.html">Home</a>
+				<a href="highlights.html" >Highlights</a>
+				<a href="karte.html">Karte</a>
+				<a href="virtuelletour.html" class="active">Tour</a>
+				<a href="kontakt.html">Kontakt</a>
+				<a href="impressum.html" id="impressum">Impressum</a>
+			</nav>
+		</div>
+		<main>
+			<div style="margin-top: 20px">
+				<iframe class="rdg" src="http://www.360tourist.net/view-tour/5576/360wa526a39fdb2fe9" style="border: none; margin: 0; padding: 0;" ></iframe>
+			</div>
+		</main>
+		<footer>Auis restaurant * Museumsstrasse 24 * 6020 Innsbruck * T: +43/512/583671 * mail@auis.at * www.auis.at</footer>
+	</header>
+</body>
+</html>

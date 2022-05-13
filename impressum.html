@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>AUIS Innsbruck</title>
+	<link rel="stylesheet" type="text/css" href="css/auisstyle.css">
+	<script type="text/javascript">
+  function iframeLoaded() {
+      var iFrameID = document.getElementById('idIframe');
+      if(iFrameID) {
+            
+            iFrameID.height = "";
+            iFrameID.height = iFrameID.contentWindow.document.body.scrollHeight + "px";
+      }   
+  }
+</script>
+</head>
+<body>
+	<header>
+		<div id=iframe>
+			<iframe src="https://www.youtube.com/embed/Mxjg3z6_wJ4" id="idIframe" onload="iframeLoaded()" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen scrolling="no"></iframe>
+		</div>
+		<div id="nav">
+			<nav>
+				<a href="index.html">Home</a>
+				<a href="highlights.html" >Highlights</a>
+				<a href="karte.html">Karte</a>
+				<a href="virtuelletour.html">Tour</a>
+				<a href="kontakt.html">Kontakt</a>
+				<a href="impressum.html" id="impressum">Impressum</a>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<div class="field-item even" property="content:encoded"><p>AFH Gastronomie GmbH<br>
+Gastronomiebetrieb</p>
+<p>UID-Nr: ATU61797979<br>
+Sitz: Dorf 134, 6306 Söll<br>
+Tel: +43/5333/5161<br>
+Fax: +43/5333/5161<br>
+E-Mail: <a href="mailto:mail@auis.at">mail@auis.at</a></p>
+<p>Gewerbeordnung:<br><a href="http://www.ris.bka.gv.at">www.ris.bka.gv.at</a><br>
+Bezirkshauptmannschaft Kufstein</p>
+</div>
+	</main>
+	<footer>Auis restaurant * Museumsstrasse 24 * 6020 Innsbruck * T: +43/512/583671 * mail@auis.at * www.auis.at</footer>
+</body>
+</html>
